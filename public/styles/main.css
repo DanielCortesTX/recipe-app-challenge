@@ -1,0 +1,136 @@
+/* General Display */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background: lightseagreen;
+    padding: 1.6rem 0;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.display-pad {
+    margin: 1rem 0;
+}
+
+.render-field {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: 1px solid black;
+}
+
+.ingredients-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-display {
+    padding: 10px 0px;
+    font-weight: 300;
+}
+
+.category-display p {
+    font-style: italic;
+}
+
+.buffer {
+    padding: 0 1rem;
+    border: 1px solid black;
+}
+
+.button {
+    cursor: pointer;
+    background: lightseagreen;
+    border: 2px solid steelblue;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: .75rem;
+    transition: background .3s ease;
+}
+
+.button-delete {
+    cursor: pointer;
+    background: lightseagreen;
+    color: whitesmoke;
+    border: 2px solid steelblue;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 45%;
+}
+
+.button:hover {
+    background: steelblue;
+}
+
+/* Recipe Display Section */
+
+.recipe-item {
+    text-decoration: none;
+    color: black;
+    background: #f2f2f2;
+    border: 2px solid #a6a6a6;
+    margin: 1.2rem 0px;
+    padding: 1.2rem;
+    display: flex;
+    transition: background .3s ease;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.recipe-item__title {
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.ingredient-item {
+    color: black;
+    background: #f2f2f2;
+    border: 2px solid #a6a6a6;
+    margin: 1rem 1rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    transition: background .3s ease;
+    align-items: baseline;
+}
+
+.ingredient-item__title {
+    font-size: 1.2rem;
+    margin-bottom: .4rem
+}
+
+.recipe-item:hover {
+    background: #e2ffff;
+}
+
+.ingredient-item__display {
+    display: flex;
+    align-items: baseline;
+}
+
+.ingredient-item__display > *:first-child {
+    margin-right: .8rem;
+}
+
+.step-completed {
+    text-decoration-line: line-through;
+}
+
+.empty-list-message {
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 8px;
+}
