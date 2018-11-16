@@ -29,9 +29,9 @@
 }
 
 .ingredients-rows {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: column;
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
 }
 
 .category-display {
@@ -65,7 +65,7 @@
     color: whitesmoke;
     border: 2px solid steelblue;
     margin: 5px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 45%;
 }
 
@@ -90,7 +90,13 @@
 
 .recipe-item__title {
     font-size: 1.8rem;
-    margin-bottom: .4rem
+    margin-bottom: .4rem;
+}
+
+.recipe-item__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+    font-style: italic;
 }
 
 .ingredient-item {

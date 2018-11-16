@@ -1,22 +1,33 @@
 import moment from 'moment'
 import { getRecipes, removeIngredient, removeStep, toggleIngredient, toggleStep } from './recipes.js'
 
-//////////////////////////////////////////////////////////
-///////////////// RENDERING FOR EDIT PAGE ////////////////
-//////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
+///////////////// RENDERING FOR INDEX PAGE ////////////////
+///////////////////////////////////////////////////////////
 
 const generateRecipeDOM = (recipe) => {
     const titleElement = document.createElement('p')
-    const createdElement = document.createElement('p')
+    const remainingElement = document.createElement('p')
     const bodyElement = document.createElement('a')
-    const createdTime = moment(recipe.createdAt).fromNow()
+    const remainingLength = recipe.ingredients.filter((ingredient) => {
+        return ingredient.checked === true
+    })
+    let remainingText = ''
+
+    if(remainingLength.length === 0){
+        remainingText = 'You have none of the ingredients'
+    } else if (remainingLength.length === recipe.ingredients.length){
+        remainingText = 'You have all of the ingredients'
+    } else {
+        remainingText = 'You have some of the ingredients'
+    }
 
     titleElement.textContent = recipe.title
     bodyElement.appendChild(titleElement)
 
-    createdElement.textContent = `Created ${createdTime}`
-    createdElement.classList.add('recipe-item__subtitle')
-    bodyElement.appendChild(createdElement)
+    remainingElement.textContent = remainingText
+    remainingElement.classList.add('recipe-item__subtitle')
+    bodyElement.appendChild(remainingElement)
 
     bodyElement.setAttribute('href', `/display.html#${recipe.id}`)
     bodyElement.classList.add('recipe-item__title')
@@ -82,7 +93,7 @@ const generateIngredientDom = (ingredient, recipe) => {
     ingredientElement.classList.add('ingredient-item__title')
     ingredientElement.classList.add('ingredient-item')
 
-    deleteButton.textContent = 'x'
+    deleteButton.textContent = 'Remove?'
     deleteButton.classList.add('button-delete')
     deleteButton.addEventListener('click', () =>{
         removeIngredient(ingredient.id, recipe)
@@ -122,7 +133,7 @@ const generateStepDom = (step, recipe, index) => {
     stepElement.classList.add('recipe-item__title')
     stepElement.classList.add('recipe-item')
 
-    deleteButton.textContent = 'X'
+    deleteButton.textContent = 'Remove?'
     deleteButton.classList.add('button-delete')
     deleteButton.addEventListener('click', () =>{
         removeStep(step.id, recipe)
@@ -187,15 +198,15 @@ const generateIngredientDisplay = (ingredient) => {
     const bodyElement = document.createElement('div')
     const checkboxElement = document.createElement('input')
 
+    ingredientTitle.textContent = ingredient.ingredientText
+    bodyElement.appendChild(ingredientTitle)
+
     checkboxElement.setAttribute('type', 'checkbox')
     checkboxElement.checked = ingredient.checked
     bodyElement.appendChild(checkboxElement)
     checkboxElement.addEventListener('change', () => {
         toggleIngredient(ingredient)
     })
-
-    ingredientTitle.textContent = ingredient.ingredientText
-    bodyElement.appendChild(ingredientTitle)
 
     bodyElement.classList.add('ingredient-item__title')
     bodyElement.classList.add('ingredient-item')
