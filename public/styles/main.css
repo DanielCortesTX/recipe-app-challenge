@@ -57,6 +57,7 @@
     font-weight: 200;
     padding: .75rem;
     transition: background .3s ease;
+    margin-top: 10px;
 }
 
 .button-delete {
