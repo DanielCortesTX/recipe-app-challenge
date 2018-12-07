@@ -90,8 +90,8 @@ const generateIngredientDom = (ingredient, recipe) => {
 
     nameElement.textContent = ingredient.ingredientText
     ingredientElement.appendChild(nameElement)
-    ingredientElement.classList.add('ingredient-item__title')
-    ingredientElement.classList.add('ingredient-item')
+    ingredientElement.classList.add('recipe-item__title')
+    ingredientElement.classList.add('recipe-item')
 
     deleteButton.textContent = 'Remove?'
     deleteButton.classList.add('button-delete')
@@ -208,8 +208,8 @@ const generateIngredientDisplay = (ingredient) => {
         toggleIngredient(ingredient)
     })
 
-    bodyElement.classList.add('ingredient-item__title')
-    bodyElement.classList.add('ingredient-item')
+    bodyElement.classList.add('recipe-item__title')
+    bodyElement.classList.add('recipe-item')
 
     return bodyElement
 }

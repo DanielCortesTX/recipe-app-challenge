@@ -24,8 +24,13 @@
 
 .render-field {
     margin: 1rem 0;
-    padding: 0 1rem;
+    padding: 1rem;
     border: 1px solid black;
+}
+
+.render-field p {
+    font-style: italic;
+    margin: .75rem 0rem;
 }
 
 .ingredients-rows {
@@ -37,10 +42,6 @@
 .category-display {
     padding: 10px 0px;
     font-weight: 300;
-}
-
-.category-display p {
-    font-style: italic;
 }
 
 .buffer {
@@ -60,14 +61,26 @@
     margin-top: 10px;
 }
 
+.button-interior {
+    cursor: pointer;
+    background: lightseagreen;
+    border: 2px solid steelblue;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: .5rem;
+    transition: background .3s ease;
+    margin-top: 10px;
+}
+
 .button-delete {
     cursor: pointer;
     background: lightseagreen;
     color: whitesmoke;
     border: 2px solid steelblue;
     margin: 5px;
-    padding: 5px;
-    border-radius: 45%;
+    padding: 10px;
+    /* border-radius: 45%; */
 }
 
 .button:hover {
@@ -140,4 +153,9 @@
     font-weight: 300;
     font-style: italic;
     margin-top: 8px;
+}
+
+.text-field {
+    padding: 9.25px 10px;
+    margin-right: 5px;
 }
