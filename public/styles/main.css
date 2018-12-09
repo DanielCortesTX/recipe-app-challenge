@@ -24,13 +24,14 @@
 
 .render-field {
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0px 1rem;
+    padding-bottom: 1rem;
     border: 1px solid black;
 }
 
 .render-field p {
-    font-style: italic;
-    margin: .75rem 0rem;
+    /* font-style: italic; */
+    /* margin: .75rem 0rem; */
 }
 
 .ingredients-rows {
@@ -40,7 +41,7 @@
 }
 
 .category-display {
-    padding: 10px 0px;
+    /* padding-top: 10px; */
     font-weight: 300;
 }
 
@@ -151,11 +152,17 @@
     color: #555;
     font-size: 1.2rem;
     font-weight: 300;
-    font-style: italic;
+    /* font-style: italic; */
     margin-top: 8px;
 }
 
 .text-field {
     padding: 9.25px 10px;
     margin-right: 5px;
+}
+
+#title-label {
+    margin: 1.0rem 0rem;
+    font-style: italic;
+    font-weight: 300;
 }
