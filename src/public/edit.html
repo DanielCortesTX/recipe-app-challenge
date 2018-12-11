@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Recipe</title>
+        <link rel="stylesheet" href="/styles/main.css">
+    </head>
+    <body>
+        <header class="header">
+           <div class="container">
+                <h1>Edit your Recipe</h1>
+           </div>
+        </header>
+        <div class="container">
+            <div>
+                <button id="to-home" class="button">To Home</button>
+            </div>
+            <div class="render-field">
+                <p id="title-label">Title your recipe here.</p>
+                <input type="text" id="recipe-title" class="text-field" placeholder="Recipe Title">
+            </div>
+            <div class="render-field">
+                <form id="new-ingredient" class="display-pad">
+                    <div class="category-display">
+                        <h2>Ingredients:</h2>
+                        <p>Add ingredients to check off later</p>
+                    </div>
+                    <input name="ingredient" type="text" id="new-in-clear" class="text-field" placeholder="New ingredient?"/>
+                    <button class="button-interior">Add ingredient</button>
+                </form>
+                <div id="ingredient-list" class="ingredients-rows"></div>
+            </div>
+            <div class="render-field">
+                <form id="new-step" class="display-pad">
+                    <div class="category-display">
+                        <h2>Steps:</h2>
+                        <p>Click each as you complete it.</p>
+                    </div>
+                    <input name="step" type="text" id="new-clear" class="text-field" placeholder="New step?"/>
+                    <button class="button-interior">Add Step</button>
+                </form>
+                <ol id="steps-list" class="ingredients-rows"></ol>
+            </div>
+            <button id="delete-recipe" class="button">Delete Recipe?</button> 
+        </div>
+       <script src="/scripts/edit-bundle.js"></script>
+    </body>
+</html>
