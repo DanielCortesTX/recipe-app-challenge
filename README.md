@@ -6,9 +6,15 @@ RECIPE-APP-CHALLENGE
 * The methodolgy and code in this application is inspired by the projects learned in the said course.
 * any thoughts?
 
+DISCLAIMER
+
+* Github repository for this app includes commits that have implemented bootstrap. Only the home page
+  has been updated thus far. WORK IN PROGRESS with stlying. Link to live site has been updated with 
+  bootstrap yet.
+
 INSTALLATION
 
-* clone the application from github: 
+* clone the application from github:
 
   https://github.com/Schyenindogu/recipe-app-challenge.git
 
