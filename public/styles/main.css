@@ -103,6 +103,10 @@
     align-items: baseline;
 }
 
+.main-list:hover {
+    text-decoration: none;
+}
+
 .recipe-item__title {
     font-size: 1.8rem;
     margin-bottom: .4rem;
