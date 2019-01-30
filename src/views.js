@@ -23,13 +23,13 @@ const generateRecipeDOM = (recipe) => {
     }
 
     titleElement.textContent = recipe.title
-    titleElement.classList.add('lead')
+    titleElement.classList.add('display-font')
     titleElement.classList.add('pt-2')
     titleElement.classList.add('pl-3')
     bodyElement.appendChild(titleElement)
 
     remainingElement.textContent = remainingText
-    // remainingElement.classList.add('recipe-item__subtitle')
+    remainingElement.classList.add('recipe-item__subtitle')
     remainingElement.classList.add('lead')
     remainingElement.classList.add('pr-3')
     remainingElement.classList.add('pt-2')
@@ -44,8 +44,8 @@ const generateRecipeDOM = (recipe) => {
     bodyElement.classList.add('text-decoration-none')
     bodyElement.classList.add('main-list')
     bodyElement.classList.add('align-items-center')
-    // bodyElement.classList.add('recipe-item__title')
-    // bodyElement.classList.add('recipe-item')
+    bodyElement.classList.add('recipe-item__title')
+    bodyElement.classList.add('recipe-item')
 
     return bodyElement
 }
