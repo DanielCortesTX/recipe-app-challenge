@@ -201,6 +201,7 @@ const generateStepDisplay = (step, index) => {
         toggleStep(step) 
     })
 
+    // bodyElement.classList.add('card')
     bodyElement.classList.add('recipe-item__title')
     bodyElement.classList.add('recipe-item')
 
@@ -221,7 +222,7 @@ const generateIngredientDisplay = (ingredient) => {
     checkboxElement.addEventListener('change', () => {
         toggleIngredient(ingredient)
     })
-
+   
     bodyElement.classList.add('recipe-item__title')
     bodyElement.classList.add('recipe-item')
 
