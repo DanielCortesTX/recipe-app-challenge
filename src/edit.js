@@ -8,36 +8,36 @@ const recipeId = location.hash.substring(1)
 initializeEditPage(recipeId)
 
 document.querySelector('#new-ingredient').addEventListener('submit', (e) => {
-    const ingredientText = e.target.elements.ingredient.value
-    e.preventDefault
-    createIngredient(recipeId, ingredientText)
+  const ingredientText = e.target.elements.ingredient.value
+  e.preventDefault
+  createIngredient(recipeId, ingredientText)
 })
 
 document.querySelector('#new-step').addEventListener('submit', (e) => {
-    const stepText = e.target.elements.step.value
-    e.preventDefault
-    createStep(recipeId, stepText)
+  const stepText = e.target.elements.step.value
+  e.preventDefault
+  createStep(recipeId, stepText)
 })
 
 document.querySelector('#delete-recipe').addEventListener('click', (e) => {
-    e.preventDefault
-    console.log('yes')
-    deleteRecipe(recipeId)
-    location.assign('/')
+  e.preventDefault
+  console.log('yes')
+  deleteRecipe(recipeId)
+  location.assign('/')
 })
 
 recipeTitle.addEventListener('input', (e) => {
-    updateRecipe(recipeId, {
-        title: e.target.value
-    })
+  updateRecipe(recipeId, {
+    title: e.target.value
+  })
 })
 
 window.addEventListener('storage', (e) => {
-    if(e.key === 'recipes'){
-        initializeEditPage(recipeId)
-    }
+  if(e.key === 'recipes'){
+    initializeEditPage(recipeId)
+  }
 })
 
 document.querySelector("#to-home").addEventListener('click', () => {
-    location.assign('/')
+  location.assign('/')
 })
