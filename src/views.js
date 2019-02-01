@@ -1,4 +1,3 @@
-import moment from 'moment'
 import { getRecipes, removeIngredient, removeStep, toggleIngredient, toggleStep } from './recipes.js'
 
 ///////////////////////////////////////////////////////////
@@ -57,7 +56,7 @@ const renderRecipes = () => {
 
 const initializeEditPage = (recipeId) => {
   const titleElement = document.querySelector('#recipe-title')
-  // const ingredientsElement = document.querySelector('#ingredient-list')
+  
   const recipes = getRecipes()
   const recipe = recipes.find((recipe) => recipe.id === recipeId)
 
@@ -193,7 +192,6 @@ const generateStepDisplay = (step, index) => {
     toggleStep(step) 
   })
 
-  // bodyElement.classList.add('card')
   bodyElement.classList.add('recipe-item__title')
   bodyElement.classList.add('recipe-item')
 

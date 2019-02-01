@@ -2,7 +2,6 @@ import { updateRecipe, createIngredient, createStep, deleteRecipe } from './reci
 import { initializeEditPage } from './views'
 
 const recipeTitle = document.querySelector('#recipe-title')
-// const ingredientInput = document.querySelector('#ingredient-input')
 const recipeId = location.hash.substring(1)
 
 initializeEditPage(recipeId)
