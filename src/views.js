@@ -36,14 +36,7 @@ const generateRecipeDOM = (recipe) => {
   bodyElement.appendChild(remainingElement)
 
   bodyElement.setAttribute('href', `/display.html#${recipe.id}`)
-  bodyElement.classList.add('card')
-  bodyElement.classList.add('my-2')
-  bodyElement.classList.add('d-flex')
-  bodyElement.classList.add('flex-row')
-  bodyElement.classList.add('justify-content-between')
-  bodyElement.classList.add('text-decoration-none')
   bodyElement.classList.add('main-list')
-  bodyElement.classList.add('align-items-center')
   bodyElement.classList.add('recipe-item__title')
   bodyElement.classList.add('recipe-item')
 
