@@ -23,9 +23,9 @@ const generateRecipeDOM = (recipe) => {
   }
 
   titleElement.textContent = recipe.title
-  titleElement.classList.add('display-font')
   titleElement.classList.add('pt-2')
   titleElement.classList.add('pl-3')
+  bodyElement.classList.add('recipe-item__title')
   bodyElement.appendChild(titleElement)
 
   remainingElement.textContent = remainingText
@@ -37,7 +37,6 @@ const generateRecipeDOM = (recipe) => {
 
   bodyElement.setAttribute('href', `/display.html#${recipe.id}`)
   bodyElement.classList.add('main-list')
-  bodyElement.classList.add('recipe-item__title')
   bodyElement.classList.add('recipe-item')
 
   return bodyElement
