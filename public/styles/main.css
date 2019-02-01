@@ -1,15 +1,15 @@
 /* General Display */
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
-    color: white;
-    background: lightseagreen;
-    padding: 1.6rem 0;
+  color: white;
+  background: lightseagreen;
+  padding: 1.6rem 0;
 }
 
 .container {
@@ -19,153 +19,153 @@
 }
 
 .display-pad {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .render-field {
-    margin: 1rem 0;
-    padding: 0px 1rem;
-    padding-bottom: 1rem;
-    border: 1px solid black;
+  margin: 1rem 0;
+  padding: 0px 1rem;
+  padding-bottom: 1rem;
+  border: 1px solid black;
 }
 
 .render-field p {
-    /* font-style: italic; */
-    /* margin: .75rem 0rem; */
+  /* font-style: italic; */
+  /* margin: .75rem 0rem; */
 }
 
 .ingredients-rows {
-    display: column;
-    /* flex-wrap: wrap;
-    justify-content: space-around; */
+  display: column;
+  /* flex-wrap: wrap;
+  justify-content: space-around; */
 }
 
 .category-display {
-    /* padding-top: 10px; */
-    font-weight: 300;
+  /* padding-top: 10px; */
+  font-weight: 300;
 }
 
 .buffer {
-    padding: 0 1rem;
-    border: 1px solid black;
+  padding: 0 1rem;
+  border: 1px solid black;
 }
 
 .button {
-    cursor: pointer;
-    background: lightseagreen;
-    border: 2px solid steelblue;
-    color: whitesmoke;
-    font-size: 1.3rem;
-    font-weight: 200;
-    padding: .75rem;
-    transition: background .3s ease;
-    margin-top: 10px;
+  cursor: pointer;
+  background: lightseagreen;
+  border: 2px solid steelblue;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: 200;
+  padding: .75rem;
+  transition: background .3s ease;
+  margin-top: 10px;
 }
 
 .button-interior {
-    cursor: pointer;
-    background: lightseagreen;
-    border: 2px solid steelblue;
-    color: whitesmoke;
-    font-size: 1rem;
-    font-weight: 200;
-    padding: .5rem;
-    transition: background .3s ease;
-    margin-top: 10px;
+  cursor: pointer;
+  background: lightseagreen;
+  border: 2px solid steelblue;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 200;
+  padding: .5rem;
+  transition: background .3s ease;
+  margin-top: 10px;
 }
 
 .button-delete {
-    cursor: pointer;
-    background: lightseagreen;
-    color: whitesmoke;
-    border: 2px solid steelblue;
-    margin: 5px;
-    padding: 10px;
-    /* border-radius: 45%; */
+  cursor: pointer;
+  background: lightseagreen;
+  color: whitesmoke;
+  border: 2px solid steelblue;
+  margin: 5px;
+  padding: 10px;
+  /* border-radius: 45%; */
 }
 
 .button:hover {
-    background: steelblue;
+  background: steelblue;
 }
 
 /* Recipe Display Section */
 
 .recipe-item {
-    text-decoration: none;
-    color: black;
-    background: #f2f2f2;
-    border: 2px solid #a6a6a6;
-    margin: 1.2rem 0px;
-    padding: 1.2rem;
-    display: flex;
-    transition: background .3s ease;
-    justify-content: space-between;
-    align-items: baseline;
+  text-decoration: none;
+  color: black;
+  background: #f2f2f2;
+  border: 2px solid #a6a6a6;
+  margin: 1.2rem 0px;
+  padding: 1.2rem;
+  display: flex;
+  transition: background .3s ease;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .main-list:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .recipe-item__title {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .recipe-item__subtitle {
-    font-size: 1.2rem;
-    margin-bottom: .4rem;
-    font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+  font-style: italic;
 }
 
 .ingredient-item {
-    color: black;
-    background: #f2f2f2;
-    border: 2px solid #a6a6a6;
-    margin: 1rem 1rem;
-    padding: .5rem;
-    display: flex;
-    justify-content: space-between;
-    transition: background .3s ease;
-    align-items: baseline;
+  color: black;
+  background: #f2f2f2;
+  border: 2px solid #a6a6a6;
+  margin: 1rem 1rem;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  transition: background .3s ease;
+  align-items: baseline;
 }
 
 .ingredient-item__title {
-    font-size: 1.2rem;
-    margin-bottom: .4rem
+  font-size: 1.2rem;
+  margin-bottom: .4rem
 }
 
 .recipe-item:hover {
-    background: #e2ffff;
+  background: #e2ffff;
 }
 
 .ingredient-item__display {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .ingredient-item__display > *:first-child {
-    margin-right: .8rem;
+  margin-right: .8rem;
 }
 
 .step-completed {
-    text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 
 .empty-list-message {
-    color: #555;
-    font-size: 1.2rem;
-    font-weight: 300;
-    /* font-style: italic; */
-    margin-top: 8px;
+  color: #555;
+	font-size: 1.2rem;
+	font-weight: 300;
+  /* font-style: italic; */
+  margin-top: 8px;
 }
 
 .text-field {
-    padding: 9.25px 10px;
-    margin-right: 5px;
+  padding: 9.25px 10px;
+  margin-right: 5px;
 }
 
 #title-label {
-    margin: 1.0rem 0rem;
-    font-style: italic;
-    font-weight: 300;
+  margin: 1.0rem 0rem;
+  font-style: italic;
+  font-weight: 300;
 }
